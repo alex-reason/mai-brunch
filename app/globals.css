@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.section {
+  @apply min-h-screen h-full 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.section-container {
+  @apply py-[5.6rem] w-full flex
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.section-title {
+  @apply font-bold uppercase text-[2rem] text-primary mx-auto mb-10
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.heading-1 {
+  @apply font-bold uppercase text-[3rem]
+}
+
+.heading-2 {
+  @apply font-medium leading-tight text-[1.2rem] text-black-2
+}
+
+.heading-3 {
+  @apply font-bold uppercase text-[1.5rem]
+}
+
+.paragraph-1 {
+  @apply font-medium text-[1rem] text-black-1
+}
+
+.paragraph-2 {
+  @apply  text-[.8rem] text-black-1
 }
