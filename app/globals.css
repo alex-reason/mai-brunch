@@ -7,7 +7,7 @@
 }
 
 .section-container {
-  @apply py-[5.6rem] w-full flex
+  @apply py-[5.6rem] w-full flex 
 }
 
 .section-title {

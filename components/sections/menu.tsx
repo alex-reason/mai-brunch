@@ -4,10 +4,10 @@ import MenuCard from "../menucard"
 const Menu = () => {
     return (
         <section className="section" id="menu">
-            <div className="section-container flex-col">
+            <div className="section-container flex-col items-center">
                 <h3 className="section-title">Menu</h3>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col justify-center lg:grid grid-cols-2 gap-4">
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col items-center gap-4">
                             <h4 className="heading-3">Salad and Soup</h4>

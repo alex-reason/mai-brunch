@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopNav />
-        <main className="px-40 pt-[4.6rem]">
+        <main className="px-4 md:px-40 pt-[4.6rem]">
           {children}
         </main>
       </body>
