@@ -1,3 +1,4 @@
+import About from "@/components/sections/about";
 import Hero from "@/components/sections/hero";
 import Menu from "@/components/sections/menu";
 import Reserve from "@/components/sections/reserve";
@@ -14,6 +15,9 @@ export default function Home() {
       <Divider />
 
       <Reserve />
+      <Divider />
+      
+      <About />
     </div>
   );
 }
