@@ -7,7 +7,7 @@ const Menu = () => {
             <div className="section-container flex-col items-center">
                 <h3 className="section-title">Menu</h3>
 
-                <div className="flex flex-col justify-center lg:grid grid-cols-2 gap-4">
+                <div className="flex flex-col justify-center lg:grid grid-cols-2 gap-4 mx-2 lg:mx-0">
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col items-center gap-4">
                             <h4 className="heading-3">Salad and Soup</h4>

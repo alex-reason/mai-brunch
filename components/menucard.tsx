@@ -12,7 +12,7 @@ interface MenuCardProps {
 
 const MenuCard = ({ menuItem }: MenuCardProps) => {
     return (
-        <article className="flex justify-between gap-10 w-[28rem] h-[10.6rem] bg-white-1 p-6">
+        <article className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-10 w-auto lg:w-[28rem] min-h-[15rem] lg:min-h-[10.6rem] bg-white-1 p-6">
             <div>
                 <p className="paragraph-1">{menuItem.title}</p>
                 <p className="paragraph-2">{menuItem.description}</p>

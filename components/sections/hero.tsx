@@ -18,7 +18,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="mx-auto">
                     <Image src={heroImg} alt="by Brooke Lark on Unsplash" className="w-[39rem] h-[31rem] object-cover" />
                 </div>
 
