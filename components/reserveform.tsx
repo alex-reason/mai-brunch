@@ -108,19 +108,19 @@ const ReserveForm = () => {
                                         className='bg-grey-1 px-2 py-1'
                                         onChange={(e) => onSelect(e)}
                                     >
-                                        <option value="9AM">9AM</option>
+                                        <option value="9:00AM">9:00AM</option>
                                         <option value="9:30AM">9:30AM</option>
-                                        <option value="10AM">10AM</option>
+                                        <option value="10:00AM">10:00AM</option>
                                         <option value="10:30AM">10:30AM</option>
-                                        <option value="11AM">11AM</option>
+                                        <option value="11:00AM">11:00AM</option>
                                         <option value="11:30AM">11:30AM</option>
-                                        <option value="12PM">12PM</option>
+                                        <option value="12:00PM">12:00PM</option>
                                         <option value="12:30PM">12:30PM</option>
-                                        <option value="1PM">1PM</option>
+                                        <option value="1:00PM">1:00PM</option>
                                         <option value="1:30PM">1:30PM</option>
-                                        <option value="2PM">2PM</option>
+                                        <option value="2:00PM">2:00PM</option>
                                         <option value="2:30PM">2:30PM</option>
-                                        <option value="3PM">3PM</option>
+                                        <option value="3:00PM">3:00PM</option>
                                     </select>
                                 </div>
                             </div>
