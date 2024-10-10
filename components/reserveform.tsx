@@ -19,18 +19,28 @@ const ReserveForm = () => {
     const [date, setDate] = useState(`${yyyy}-${mm}-${dd}`);
     const [time, setTime] = useState('');
     const [confirmed, setConfirmed] = useState(false);
+    const [error, setError] = useState<null | string>(null);
 
     const onSubmit = async (e: FormEvent) => {
         e.preventDefault()
-        await addReservation({
-            id: `${Date.now().toString()}-${name}`,
-            name,
-            numOfPersons,
-            phoneNum,
-            date,
-            time,
-        })
-        setConfirmed(true)
+        setError(null)
+        if (name.length <= 0 || numOfPersons <= 0 || phoneNum.length <= 0 || date.length <= 0 || time.length <= 0) {
+            setError('Please fill up the form')
+            reset()
+            return
+        }
+        else {
+            await addReservation({
+                id: `${Date.now().toString()}-${name}`,
+                name,
+                numOfPersons,
+                phoneNum,
+                date,
+                time,
+            })
+            setConfirmed(true)
+        }
+   
     }
     const reset = () => {
         setNumOfPersons(0);
@@ -125,11 +135,13 @@ const ReserveForm = () => {
                                 </div>
                             </div>
 
-                            <button className='bg-white-1 text-black-1 border-[1px] border-black-2 px-[1rem] py-[.8rem] rounded-md shadow-sm hover:-translate-y-[.1rem]'
+                            <button className={`bg-white-1 text-black-1 border-[1px] border-black-2 px-[1rem] py-[.8rem] rounded-md shadow-sm hover:-translate-y-[.1rem] ${error && 'shake'}`}
                                 onClick={(e) => onSubmit(e)}
                             >
                                 <p className='font-bold uppercase text-[0.8rem]'>Confirm Reservation</p>
                             </button>
+
+                            {error &&  <p className='text-red-600 mt-4'>{error}</p>}
 
                         </div>
 

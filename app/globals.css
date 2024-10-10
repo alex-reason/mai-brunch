@@ -33,3 +33,15 @@
 .paragraph-2 {
   @apply  text-[.8rem] text-black-1
 }
+
+.shake {
+  animation: .2s tilt-shaking;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
