@@ -46,7 +46,6 @@ const ReserveForm = () => {
         setNumOfPersons(0);
         setName('');
         setPhoneNum('');
-        setDate('');
         setTime('');
         setConfirmed(false)
     };
